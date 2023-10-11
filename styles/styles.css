@@ -1,8 +1,8 @@
 @import "https://fonts.googleapis.com/css2?family=Sora&display=swap";
+@import './description.css';
+@import './testimonial.css';
+@import './icons.css';
 
-:root {
-    --color-icon: #F5C044;
-}
 
 * {
   margin: 0;
@@ -31,76 +31,9 @@ body {
   align-items: center;
 }
 
-.description h1 {
-  font-size: 2.25rem;
-}
-
-.text {
-  font-size: 1.25rem;
-}
-
-.description {
-  color: #52525a;
-  grid-row: 1/3;
-}
-
-.circle {
-    width: 2.4rem;
-    background-color: #F5C044;
-}
-
-.testimonial {
-  width: 370px;
-  padding: 1.5rem 2.8rem;
-  background-color: #fff;
-  color: #52525a;
-  border-radius: 15px;
-  /* box-shadow: ; */
-}
-
-.testimonial-heading {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-
-.logo {
-  width: 7.5vw;
-}
-
-.stars {
-  display: flex;
-  flex-direction: row;
-  margin: 0 1rem;
-}
-
-.star {
-  display: inline-block;
-  width: 1.6rem;
-  height: 1.6rem;
-  background: url(./../img/Star_fill.svg);
-}
-
-@supports (-webkit-mask: url("")) or (mask: url("")) {
-  .star {
-    -webkit-mask: url(./../img/Star_fill.svg);
-    mask: url(./../img/Star_fill.svg);
-    mask-size: cover;
-    background: #F5C044;
+@media (max-width: 926px) {
+  .container {
+    margin: auto 3.5rem;
+    grid-template-columns: 1fr;
   }
-}
-
-.uncolored {
-    background: #D4D4D8;
-}
-
-.first {
-  justify-self: right;
-  /* grid-column: 2/3; */
-  grid-row: 1/2;
-}
-
-.second {
-  /* grid-column: 2/3; */
-  grid-row: 2/3;
 }

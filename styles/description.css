@@ -1,0 +1,19 @@
+.description {
+  color: #52525a;
+  grid-row: 1/3;
+}
+
+.description h1 {
+  font-size: 2.25rem;
+}
+
+.text {
+  font-size: 1.25rem;
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  background-color: #f5c044;
+  border-radius: 50%;
+}

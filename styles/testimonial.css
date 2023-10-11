@@ -1,0 +1,27 @@
+.testimonial {
+  width: 370px;
+  padding: 1.5rem 2.8rem;
+  background-color: #fff;
+  color: #52525a;
+  border-radius: 15px;
+  /* box-shadow: ; */
+}
+
+.first {
+  justify-self: right;
+  grid-row: 1/2;
+}
+
+.second {
+  grid-row: 2/3;
+}
+
+.testimonial-heading {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.logo {
+  width: 7.5vw;
+}
