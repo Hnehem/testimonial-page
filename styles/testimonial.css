@@ -1,19 +1,26 @@
+.testimonials {
+  grid-area: testimonials;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .testimonial {
   width: 370px;
+  font-size: 1rem;
   padding: 1.5rem 2.8rem;
   background-color: #fff;
   color: #52525a;
   border-radius: 15px;
-  /* box-shadow: ; */
+  box-shadow: 30px 30px 150px 10px #D4D4D8;
 }
 
 .first {
-  justify-self: right;
-  grid-row: 1/2;
+  align-self: end;
+  margin-bottom: 3rem;
 }
 
 .second {
-  grid-row: 2/3;
+  align-self: start;
 }
 
 .testimonial-heading {
@@ -24,4 +31,10 @@
 
 .logo {
   width: 7.5vw;
+}
+
+@media (max-width: 980px) {
+  .testimonials {
+    margin-top: 1.5rem;
+  }
 }

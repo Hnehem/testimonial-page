@@ -1,45 +1,46 @@
 .stars {
-    display: flex;
-    flex-direction: row;
-    margin-left: 1.5rem;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  margin-left: 1.5rem;
+}
+
+.star {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url(./../img/Star_fill.svg);
+}
+
+.check-mask {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(./../img/Done_ring_round_fill.svg);
+}
+
+@supports (-webkit-mask: url("")) or (mask: url("")) {
   .star {
-    display: inline-block;
-    width: 1.6rem;
-    height: 1.6rem;
-    background: url(./../img/Star_fill.svg);
+    -webkit-mask: url(./../img/Star_fill.svg);
+    mask: url(./../img/Star_fill.svg);
+    mask-size: cover;
+    background: #d4d4d8;
   }
-  
+
   .check-mask {
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: url(./../img/Done_ring_round_fill.svg);
+    -webkit-mask: url(./../img/Done_ring_round_fill.svg);
+    mask: url(./../img/Done_ring_round_fill.svg);
+    mask-size: cover;
+    background: #d4d4d8;
   }
-  
-  @supports (-webkit-mask: url("")) or (mask: url("")) {
-    .star {
-      -webkit-mask: url(./../img/Star_fill.svg);
-      mask: url(./../img/Star_fill.svg);
-      mask-size: cover;
-      background: #D4D4D8;
-    }
-  
-    .check-mask {
-      -webkit-mask: url(./../img/Done_ring_round_fill.svg);
-      mask: url(./../img/Done_ring_round_fill.svg);
-      mask-size: cover;
-      background: #D4D4D8;
-    }
-  }
-  .star {
-    background: #F5C044;
-  }
-  .uncolored {
-      background: #D4D4D8;
-  }
-  
-  .done-icon {
-    background: #4CA154;
-  }
+}
+.star {
+  background: #f5c044;
+}
+.uncolored {
+  background: #d4d4d8;
+}
+
+.done-icon {
+  margin-right: 1rem;
+  background: #4ca154;
+}
