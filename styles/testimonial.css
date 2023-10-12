@@ -2,7 +2,7 @@
   grid-area: testimonials;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  /* justify-content: end; */
 }
 .testimonial {
   width: 370px;
