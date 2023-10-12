@@ -26,7 +26,6 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 'description testimonials';
   grid-gap: 2rem;
-  /* grid-auto-flow: column; */
 }
 
 @media (max-width: 980px) {
