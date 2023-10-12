@@ -34,7 +34,7 @@ body {
     grid-template-rows: repeat(2, auto);
 
     grid-template-areas: 'description' 'testimonials';
-    margin: auto 5rem;
+    margin: 4rem 5rem;
   }
 }
 
