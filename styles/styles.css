@@ -40,12 +40,12 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    margin: 1rem 3rem;
+    margin: 4rem 3rem;
   }
 }
 
 @media (max-width: 640px) {
   .container {
-    margin: 1.5rem 2rem;
+    margin: 4rem 2rem;
   }
 }
